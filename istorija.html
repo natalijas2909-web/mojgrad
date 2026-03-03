@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="sr">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Istorija - Leskovac</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #ffffff;
+            color: #222;
+            line-height: 1.6;
+        }
+
+        :root {
+            --crvena: #C8102E;
+            --plava: #0C4076;
+            --bela: #ffffff;
+        }
+
+        header {
+            text-align: center;
+            padding: 20px;
+            background: linear-gradient(90deg, var(--plava), var(--crvena));
+            color: var(--bela);
+            border-bottom: 4px solid var(--plava);
+        }
+
+        header h1 {
+            margin-bottom: 15px;
+            font-size: 32px;
+            position: relative;
+        }
+
+        header h1::after {
+            content: "";
+            width: 120px;
+            height: 5px;
+            background: linear-gradient(90deg, var(--bela), var(--plava), var(--crvena));
+            display: block;
+            margin: 10px auto 0;
+            border-radius: 4px;
+            animation: slide 2s infinite ease-in-out alternate;
+        }
+
+        @keyframes slide {
+            from { transform: scaleX(0.4); }
+            to   { transform: scaleX(1); }
+        }
+
+        nav a {
+            color: var(--bela);
+            text-decoration: none;
+            margin: 0 12px;
+            padding: 8px 14px;
+            font-weight: bold;
+            border-radius: 6px;
+            transition: 0.3s ease;
+        }
+
+        nav a:hover {
+            background: var(--bela);
+            color: var(--plava);
+        }
+
+        nav a.active {
+            background: var(--bela);
+            color: var(--crvena);
+        }
+
+        main {
+            width: 80%;
+            margin: 40px auto;
+            text-align: left;
+        }
+
+        main img {
+            width: 100%;
+            max-width: 500px;
+            display: block;
+            margin: 0 auto 30px;
+            border-radius: 12px;
+            border: 4px solid var(--plava);
+            box-shadow: 0 6px 16px rgba(0,0,0,0.18);
+        }
+
+        h2, h3 {
+            color: var(--plava);
+            margin-top: 25px;
+            margin-bottom: 10px;
+        }
+
+        p {
+            margin-bottom: 15px;
+            font-size: 17px;
+        }
+
+        ul {
+            margin-left: 20px;
+            margin-top: 10px;
+        }
+
+        ul li {
+            margin-bottom: 8px;
+            padding-left: 10px;
+            border-left: 4px solid var(--crvena);
+            transition: 0.3s;
+        }
+
+        ul li:hover {
+            border-left: 4px solid var(--plava);
+            transform: translateX(5px);
+        }
+
+        footer {
+            margin-top: 40px;
+            text-align: center;
+            color: var(--bela);
+            background: var(--plava);
+            padding: 20px;
+            border-top: 4px solid var(--crvena);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Istorija grada</h1>
+     <nav>
+      <a href="index.html">Početna</a> 
+      <a href="lokacija.html">Lokacija</a> 
+      <a href="istorija.html" class="active">Istorija</a>
+      <a href="rostiljijada.html">Roštiljijada</a>
+     </nav>
+    </header>
+
+    <main>
+         <img src="istorijagrada.jpg" alt="Istorija grada">
+         <br>
+     <p>Leskovac ima dugu i bogatu istoriju. Na ovom prostoru postojala su naselja još u vreme Rimskog carstva, a grad je kroz vekove bio poznat po trgovini, zanatstvu i tekstilnoj industriji.</p>
+     <p>U 19. i 20. veku Leskovac je bio jedan od najrazvijenijih industrijskih centara Srbije i bivše Jugoslavije. Zvali su ga „srpski Mančester“ zbog velikog broja tekstilnih fabrika.</p>
+     <p>Danas je grad spoj tradicije i modernog života, koji čuva svoje korene, ali i teži savremenom razvoju i turizmu.</p>
+
+      <h3>Najvažniji istorijski događaji</h3>
+       <ul>
+          <li><strong>1395.</strong> - Prvi pisani pomen Leskovca</li>
+          <li><strong>1878.</strong> - Oslobođenje od Turaka</li>
+          <li><strong>1930.</strong> - Razvoj tekstilne industrije - „srpski Mančester“</li>
+          <li><strong>2025.</strong> - Leskovac - grad tradicije, ukusa i gostoprimstva</li>
+        </ul>
+
+    </main>
+
+    <footer>
+         <p><strong>Hvala što ste posetili sajt o istoriji Leskovca!</strong></p>
+    </footer>
+
+</body>
+</html>

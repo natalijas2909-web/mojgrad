@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="sr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lokacija - Leskovac</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #ffffff;
+            color: #222;
+            line-height: 1.6;
+        }
+
+        :root {
+            --crvena: #C8102E;
+            --plava: #0C4076;
+            --bela: #ffffff;
+        }
+        header {
+            text-align: center;
+            padding: 20px;
+            background: linear-gradient(90deg, var(--plava), var(--crvena));
+            color: var(--bela);
+            border-bottom: 4px solid var(--plava);
+        }
+
+        header h1 {
+            margin-bottom: 15px;
+            font-size: 32px;
+            position: relative;
+        }
+
+        header h1::after {
+            content: "";
+            width: 120px;
+            height: 5px;
+            background: linear-gradient(90deg, var(--bela), var(--plava), var(--crvena));
+            display: block;
+            margin: 10px auto 0;
+            border-radius: 4px;
+            animation: slide 2s infinite ease-in-out alternate;
+        }
+
+        @keyframes slide {
+            from { transform: scaleX(0.4); }
+            to   { transform: scaleX(1); }
+        }
+
+        nav a {
+            color: var(--bela);
+            text-decoration: none;
+            margin: 0 12px;
+            padding: 8px 14px;
+            font-weight: bold;
+            border-radius: 6px;
+            transition: 0.3s ease;
+        }
+
+        nav a:hover {
+            background: var(--bela);
+            color: var(--plava);
+        }
+
+        nav a.active {
+            background: var(--bela);
+            color: var(--crvena);
+        }
+
+        main {
+            width: 80%;
+            margin: 40px auto;
+        }
+
+        main img {
+            width: 100%;
+            max-width: 500px;
+            display: block;
+            margin: 0 auto 30px;
+            border-radius: 12px;
+            border: 4px solid var(--plava);
+            box-shadow: 0 6px 16px rgba(0,0,0,0.18);
+        }
+
+        h2, h3 {
+            color: var(--plava);
+            margin-top: 25px;
+            margin-bottom: 10px;
+        }
+
+        p {
+            margin-bottom: 15px;
+            font-size: 17px;
+        }
+
+        ul {
+            margin-left: 20px;
+            margin-top: 10px;
+        }
+
+        ul li {
+            margin-bottom: 8px;
+            padding-left: 10px;
+            border-left: 4px solid var(--crvena);
+            transition: 0.3s;
+        }
+
+        ul li:hover {
+            border-left: 4px solid var(--plava);
+            transform: translateX(5px);
+        }
+
+        footer {
+            margin-top: 40px;
+            text-align: center;
+            color: var(--bela);
+            background: var(--plava);
+            padding: 20px;
+            border-top: 4px solid var(--crvena);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Lokacija i znamenitosti Leskovca </h1>
+     <nav>
+      <a href="index.html">Početna</a> 
+      <a href="lokacija.html" class="active">Lokacija</a> 
+      <a href="istorija.html">Istorija</a>
+      <a href="rostiljijada.html">Roštiljijada</a>
+     </nav>
+    </header>
+
+<main>
+     <img src="geografski-polozaj.jpg" alt="Lokacija" width="400px">
+        <h2>Gde se nalazi Leskovac</h2>
+
+     <p>Leskovac se nalazi u južnom delu Srbije, na reci Veternici u srcu Leskovačke kotline, okružen planinama kao što su Radan i Goljak na zapadu, Kukavica i Čemernik na jugu, i Babička gora, Seličevica i Suva planina na istoku. Severno od grada nalazi se Niška kotlina, a južno, preko Grdeličke klisure, Vranjsko-bujanovačka kotlina. Grad je udaljen oko 45 km od Niša i 280 km od Beograda.</p>
+     <p>Zahvaljujući svom položaju, Leskovac je kroz istoriju bio važan trgovinski i kulturni centar ovog dela Srbije.</p>
+     <p>Danas je poznat po svojoj gastronomskoj ponudi, gostoprimstvu i brojnim manifestacijama koje promovišu tradiciju i duh juga Srbije.</p>
+
+     <h3>Poznate znamenitosti</h3>
+       <ul>
+         <li>Leskovački muzej</li>
+         <li>Šop-Đokićeva kuća</li>
+         <li>Crkva Svete Trojice</li>
+      </ul>
+</main>   
+
+   <footer>
+       <p><strong>Pronađite Leskovac na mapi i otkrijte njegovu lepotu.</strong></p>
+   </footer>
+
+</body>
+</html>
